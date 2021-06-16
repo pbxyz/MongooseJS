@@ -1,0 +1,19 @@
+{
+  "name": "mongoosejs",
+  "version": "1.0.0",
+  "description": "<div align=\"center\">",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pbxyz/MongooseJS.git"
+  },
+  "author": "PBXYZ",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pbxyz/MongooseJS/issues"
+  },
+  "homepage": "https://github.com/pbxyz/MongooseJS#readme"
+}
