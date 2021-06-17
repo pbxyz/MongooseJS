@@ -26,21 +26,6 @@ app.get('/books', (req, res) => {
         })
 })
 
-app.get('/books/:id', (req, res) => {
-    console.log('getting one books')
-    Book.findOne({
-        _id: req.params.id
-    })
-        .exec((err, book) => {
-            if (err) {
-                res.send('error has occured')
-            } else {
-                console.log(book)
-                res.json(book)
-            }
-        })
-})
-
 app.listen(port, () => {
     console.log('app listening on port: ' + port)
 })
