@@ -7,7 +7,9 @@ const db = 'mongodb://localhost/library'
 const app = express()
 const port = 8080
 
-mongoose.connect(db, err => err ? console.log(err) : console.log('Db is connected!'))
+mongoose.connect(db)
+    .then(db => console.log('Db is connected: ' + db))
+    .catch(error => console.log(error))
 
 app.get('/', (req, res) => {
     res.send('happy to be here')
