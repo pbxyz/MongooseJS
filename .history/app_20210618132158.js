@@ -1,4 +1,5 @@
 const express = require('express')
+const bodyParser = require('body-parser')
 const mongoose = require('mongoose')
 const Book = require('./Book.model')
 
@@ -12,7 +13,7 @@ app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 
 app.get('/', (req, res) => {
-    res.send('MongooseJS Essentials - Learn MongoDB for Node.js')
+    res.send('happy to be here')
 })
 
 app.get('/books', (req, res) => {
@@ -51,17 +52,6 @@ app.post('/book', (req, res) => {
     newBook.category = req.body.category
 
     newBook.save((err, book) => {
-        if (err) {
-            res.send('error saving book')
-        } else {
-            console.log(book)
-            res.send(book)
-        }
-    })
-})
-
-app.post('/book2', (req, res) => {
-    Book.create(req.body, (err, book) => {
         if (err) {
             res.send('error saving book')
         } else {

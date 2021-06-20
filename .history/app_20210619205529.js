@@ -60,17 +60,6 @@ app.post('/book', (req, res) => {
     })
 })
 
-app.post('/book2', (req, res) => {
-    Book.create(req.body, (err, book) => {
-        if (err) {
-            res.send('error saving book')
-        } else {
-            console.log(book)
-            res.send(book)
-        }
-    })
-})
-
 app.listen(port, () => {
     console.log('app listening on port: ' + port)
 })
