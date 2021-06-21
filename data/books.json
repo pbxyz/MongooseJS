@@ -1,0 +1,38 @@
+[{
+  "_id": {
+    "$oid": "60ca737e025f2324520d6ea7"
+  },
+  "title": "Refactoring the DOM",
+  "author": "Joe Blow",
+  "category": "Technology"
+},{
+  "_id": {
+    "$oid": "60ca73de025f2324520d6ea8"
+  },
+  "title": "Learn Colloquial Speech",
+  "author": "Susie Q",
+  "category": "Humanities"
+},{
+  "_id": {
+    "$oid": "60ca740f025f2324520d6ea9"
+  },
+  "title": "Study of the Brain",
+  "author": "Matt G",
+  "category": "Health"
+},{
+  "_id": {
+    "$oid": "60cedfb779e2d816bc357c38"
+  },
+  "title": "Artificial Intelligence",
+  "author": "Cherry Bhargava, Pradeep Kumar Sharma",
+  "category": "Computer Science",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ce958b411d721458ea3d9e"
+  },
+  "title": "Moby Dick",
+  "author": "Hemmingway",
+  "category": "fish tales",
+  "__v": 0
+}]
