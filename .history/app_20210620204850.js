@@ -36,7 +36,7 @@ app.get('/books', (req, res) => {
 })
 
 app.get('/books/:id', (req, res) => {
-    console.log('getting one book')
+    console.log('getting one books')
     Book.findOne({
         _id: req.params.id
     })
@@ -83,12 +83,12 @@ app.put('/book/:id', (req, res) => {
         { _id: req.params.id },
         { $set: { title: req.body.title } },
         { upsert: true },
-        (err) => {
+        (err, newBook) => {
             if (err) {
                 console.log('error updating book')
             } else {
-                console.log('book found and updated')
-                res.send('book found and updated')
+                console.log(newBook)
+                res.status(204)
             }
         }
     )
