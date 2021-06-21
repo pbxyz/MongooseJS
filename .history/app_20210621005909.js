@@ -102,7 +102,7 @@ app.delete('/book/:id', (req, res) => {
                 console.log('error deleting book')
             } else {
                 console.log('book found and deleted', book)
-                res.send('book found and deleted') // res.status(204) not working
+                res.send('book found and deleted', book) // res.status(204) not working
             }
         }
     )

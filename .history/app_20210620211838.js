@@ -94,20 +94,6 @@ app.put('/book/:id', (req, res) => {
     )
 })
 
-app.delete('/book/:id', (req, res) => {
-    Book.findOneAndRemove(
-        { _id: req.params.id },
-        (err, book) => {
-            if (err) {
-                console.log('error deleting book')
-            } else {
-                console.log('book found and deleted', book)
-                res.send('book found and deleted') // res.status(204) not working
-            }
-        }
-    )
-})
-
 app.listen(port, () => {
     console.log('app listening on port: ' + port)
 })
